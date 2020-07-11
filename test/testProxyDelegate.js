@@ -98,6 +98,6 @@ contract("ProxyCall", accounts => {
 
         // check if the version in lib is set
         const version = await lib.version();
-        assert.equal(version, 3, "version mismatch");
+        assert.equal(version, expectedVersion, "version mismatch");
     });
 });
